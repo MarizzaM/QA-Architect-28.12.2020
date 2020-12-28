@@ -11,10 +11,10 @@ public class Main {
         Random r = new Random();
 
         int [] arr = new int [20];
-        for (int i = 0; i <= arr.length-1; i++){
-            arr[i] = i+1;
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = arr.length-i;
         }
-        for (int i = arr.length-1; i >= 0; i--){
+        for (int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + " ");
         }
     }
